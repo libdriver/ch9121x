@@ -120,7 +120,7 @@ var driver__ch9121x_8c =
     [ "ch9121x_set_dest_port", "group__ch9121x__base__driver.html#ga0ccdc7b126ebb5eeb7cad5e69990916b", null ],
     [ "ch9121x_set_dhcp", "group__ch9121x__base__driver.html#gaacd14c29adebcc22f1bfcdd2b102a786", null ],
     [ "ch9121x_set_disconnect_with_no_rj45", "group__ch9121x__base__driver.html#gabfb253a5ce2539ed7caa68b2cab3d38a", null ],
-    [ "ch9121x_set_domain", "group__ch9121x__base__driver.html#gae2472b45083729198c5c681ba3c3c568", null ],
+    [ "ch9121x_set_domain", "group__ch9121x__base__driver.html#ga8565e87d3dfc8f0c430736dd27d55967", null ],
     [ "ch9121x_set_eth_cfg", "group__ch9121x__base__driver.html#gab2c3c4f8a4c191b83f2d1216610a39f4", null ],
     [ "ch9121x_set_flow_control", "group__ch9121x__base__driver.html#gae7c7516e64bfd03fbf721e74821f6d6a", null ],
     [ "ch9121x_set_gateway", "group__ch9121x__base__driver.html#gad554e584ed287c25d2edf1211d50346a", null ],
