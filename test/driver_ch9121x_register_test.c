@@ -263,7 +263,7 @@ uint8_t ch9121x_register_test(void)
     ch9121x_interface_debug_print("ch9121x: ch9121x_set_domain test.\n");
 
     /* set domain */
-    res = ch9121x_set_domain(&gs_handle, domain);
+    res = ch9121x_set_domain(&gs_handle, CH9121X_BOOL_TRUE, domain);
     if (res != 0)
     {
         ch9121x_interface_debug_print("ch9121x: set domain failed.\n");

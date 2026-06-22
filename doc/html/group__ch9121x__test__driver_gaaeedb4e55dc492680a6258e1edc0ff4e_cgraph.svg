@@ -918,7 +918,7 @@
 <!-- Node51 -->
 <g id="Node000051" class="node">
 <title>Node51</title>
-<g id="a_Node000051"><a xlink:href="group__ch9121x__base__driver.html#gae2472b45083729198c5c681ba3c3c568" target="_top" xlink:title="set chip domain">
+<g id="a_Node000051"><a xlink:href="group__ch9121x__base__driver.html#ga8565e87d3dfc8f0c430736dd27d55967" target="_top" xlink:title="set chip domain">
 <polygon fill="white" stroke="#666666" points="277.62,-890 169.38,-890 169.38,-870 277.62,-870 277.62,-890"/>
 <text xml:space="preserve" text-anchor="middle" x="223.5" y="-876.5" font-family="Helvetica,sans-Serif" font-size="10.00">ch9121x_set_domain</text>
 </a>

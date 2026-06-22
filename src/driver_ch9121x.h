@@ -944,15 +944,17 @@ uint8_t ch9121x_get_disconnect_with_no_rj45(ch9121x_handle_t *handle, ch9121x_bo
 /**
  * @brief     set chip domain
  * @param[in] *handle pointer to a ch9121x handle structure
+ * @param[in] enable bool value
  * @param[in] *domain pointer to a domain buffer
  * @return    status code
  *            - 0 success
  *            - 1 set domain failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
+ *            - 4 domain > 33
  * @note      none
  */
-uint8_t ch9121x_set_domain(ch9121x_handle_t *handle, char *domain);
+uint8_t ch9121x_set_domain(ch9121x_handle_t *handle, ch9121x_bool_t enable, char *domain);
 
 /**
  * @brief     set eth cfg

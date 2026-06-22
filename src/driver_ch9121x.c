@@ -1692,17 +1692,19 @@ uint8_t ch9121x_set_disconnect_with_no_rj45(ch9121x_handle_t *handle, ch9121x_bo
 /**
  * @brief     set chip domain
  * @param[in] *handle pointer to a ch9121x handle structure
+ * @param[in] enable bool value
  * @param[in] *domain pointer to a domain buffer
  * @return    status code
  *            - 0 success
  *            - 1 set domain failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
+ *            - 4 domain > 33
  * @note      none
  */
-uint8_t ch9121x_set_domain(ch9121x_handle_t *handle, char *domain)
+uint8_t ch9121x_set_domain(ch9121x_handle_t *handle, ch9121x_bool_t enable, char *domain)
 {
-    uint8_t cmd[29];
+    uint8_t cmd[36] = {0};
     
     if (handle == NULL)                                            /* check handle */
     {
@@ -1712,17 +1714,18 @@ uint8_t ch9121x_set_domain(ch9121x_handle_t *handle, char *domain)
     {
         return 3;                                                  /* return error */
     }
-    if (strlen(domain) > 28)                                       /* check domain */
+    if (strlen(domain) > 33)                                       /* check domain */
     {
-        handle->debug_print("ch9121x: domain > 28.\n");            /* domain > 28 */
+        handle->debug_print("ch9121x: domain > 33.\n");            /* domain > 33 */
         
         return 4;                                                  /* return error */
     }
     
-    cmd[0] = CH9121X_CMD_PORT1_DOMAIN ;                            /* set domain */
-    memcpy(&cmd[1], (uint8_t *)domain, strlen(domain));
+    cmd[0] = CH9121X_CMD_PORT1_DOMAIN;                             /* set domain */
+    cmd[1] = enable;                                               /* set bool value */
+    memcpy(&cmd[2], (uint8_t *)domain, strlen(domain));            /* copy domain */
     if (a_ch9121x_write_check(handle, cmd,
-                             (uint16_t)(strlen(domain) + 1),
+                             (uint16_t)(strlen(domain) + 2),
                               CH9121X_UART_PRE_DELAY, 1000) != 0)  /* write domain */
     {
         return 1;                                                  /* return error */
