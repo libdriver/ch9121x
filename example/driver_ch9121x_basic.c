@@ -263,17 +263,8 @@ uint8_t ch9121x_basic_config(ch9121x_port_t uart_port, ch9121x_mode_t mode,
         return 1;
     }
     
-    /* tcp retry time convert to register */
-    res = ch9121x_tcp_retry_time_convert_to_register(&gs_handle, CH9121X_BASIC_DEFAULT_TCP_RETRY_TIME, &reg);
-    if (res != 0)
-    {
-        ch9121x_interface_debug_print("ch9121x: tcp retry time convert to register failed.\n");
-        
-        return 1;
-    }
-    
     /* set default tcp retry mode */
-    res = ch9121x_set_tcp_retry_mode(&gs_handle, reg);
+    res = ch9121x_set_tcp_retry_mode(&gs_handle, CH9121X_BASIC_DEFAULT_TCP_RETRY_TIME);
     if (res != 0)
     {
         ch9121x_interface_debug_print("ch9121x: set tcp retry mode failed.\n");

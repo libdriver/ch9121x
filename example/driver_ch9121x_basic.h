@@ -66,7 +66,7 @@ extern "C"{
 #define CH9121X_BASIC_DEFAULT_DISCONNECT_WITH_NO_RJ45        CH9121X_BOOL_TRUE                      /**< enable */
 #define CH9121X_BASIC_DEFAULT_ETH_CONFIG                     CH9121X_BOOL_TRUE                      /**< enable */
 #define CH9121X_BASIC_DEFAULT_UART_CLOCK_MODE                CH9121X_UART_CLOCK_MODE_DEFAULT        /**< default */
-#define CH9121X_BASIC_DEFAULT_TCP_RETRY_TIME                 1000                                   /**< 1000ms */
+#define CH9121X_BASIC_DEFAULT_TCP_RETRY_TIME                 1                                      /**< 0.5s, 1s, ..., 3s, 3.5 step */
 #define CH9121X_BASIC_DEFAULT_ARP_RETRY_PERIOD               1000                                   /**< 1000ms */
 #define CH9121X_BASIC_DEFAULT_ARP_RETRY_TIMES                3                                      /**< 3 times */
 

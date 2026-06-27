@@ -151,8 +151,8 @@ var NAVTREEINDEX0 =
 "group__ch9121x__base__driver.html#ga712df49d28696a13598176dfe1eca873":[0,0,1,57],
 "group__ch9121x__base__driver.html#ga720d483f29cba31a04fe10f86f034dbe":[0,0,1,6],
 "group__ch9121x__base__driver.html#ga7265767fe107373f1b724f2aec7c2e34":[0,0,1,61],
-"group__ch9121x__base__driver.html#ga80d95eac29760c6ba3247a2b924dfde7":[0,0,1,72],
-"group__ch9121x__base__driver.html#ga8319e8bbe2638efdd15f29679d47d8ac":[0,0,1,73],
+"group__ch9121x__base__driver.html#ga80d95eac29760c6ba3247a2b924dfde7":[0,0,1,70],
+"group__ch9121x__base__driver.html#ga8319e8bbe2638efdd15f29679d47d8ac":[0,0,1,71],
 "group__ch9121x__base__driver.html#ga8565e87d3dfc8f0c430736dd27d55967":[0,0,1,51],
 "group__ch9121x__base__driver.html#ga87dc10f0275124cbc70ad22a1c8faa03":[0,0,1,58],
 "group__ch9121x__base__driver.html#ga881d1c515712835e6d8a406d6184a16d":[0,0,1,38],
@@ -170,12 +170,10 @@ var NAVTREEINDEX0 =
 "group__ch9121x__base__driver.html#gaae8d9ef466e1c693d30738d8b6ce9654":[0,0,1,12],
 "group__ch9121x__base__driver.html#gab2c3c4f8a4c191b83f2d1216610a39f4":[0,0,1,52],
 "group__ch9121x__base__driver.html#gab547ea5a327def6fe3d024c1768cd0d9":[0,0,1,28],
-"group__ch9121x__base__driver.html#gabcc6fe5a3a35351dd58da9f11d778181":[0,0,1,71],
+"group__ch9121x__base__driver.html#gabcc6fe5a3a35351dd58da9f11d778181":[0,0,1,69],
 "group__ch9121x__base__driver.html#gabfb253a5ce2539ed7caa68b2cab3d38a":[0,0,1,50],
 "group__ch9121x__base__driver.html#gac49d370c8c0489ec8161c3eaaf1efcbc":[0,0,1,55],
 "group__ch9121x__base__driver.html#gac6103d527d85c91c4f67d93236fbe118":[0,0,1,5],
-"group__ch9121x__base__driver.html#gacb2788f45d730b772ebe4edeee826341":[0,0,1,70],
-"group__ch9121x__base__driver.html#gad2bcaead240266ad40b3009bc03d5e5e":[0,0,1,69],
 "group__ch9121x__base__driver.html#gad554e584ed287c25d2edf1211d50346a":[0,0,1,54],
 "group__ch9121x__base__driver.html#gadbbd07ec067830b6e0e8f73f8622e66b":[0,0,1,10],
 "group__ch9121x__base__driver.html#gadc766f003e1aa1b5d674096aeff09700":[0,0,1,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "group__ch9121x__interface__driver.html#ga3341e88131cc4c082b248822d0fd4c39":[0,0,3,3],
 "group__ch9121x__interface__driver.html#ga551f461ec6115efa9a172ebe3b6a9b23":[0,0,3,12],
 "group__ch9121x__interface__driver.html#ga59ea386b1bcccfe624f4e5bc52f8ed45":[0,0,3,9],
-"group__ch9121x__interface__driver.html#ga779cc85b6a5004c8c6b0dac58e21de2b":[0,0,3,11]
+"group__ch9121x__interface__driver.html#ga779cc85b6a5004c8c6b0dac58e21de2b":[0,0,3,11],
+"group__ch9121x__interface__driver.html#ga7ceb94814658c9adfb3a2f100a6d6b1a":[0,0,3,5],
+"group__ch9121x__interface__driver.html#ga912292ac47c07c529cdfad03b89f97f6":[0,0,3,7]
 };

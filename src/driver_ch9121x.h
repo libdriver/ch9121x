@@ -1030,8 +1030,9 @@ uint8_t ch9121x_get_phy_status(ch9121x_handle_t *handle, ch9121x_phy_status_t *s
  *            - 1 set tcp retry mode failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 t > 7
- * @note      none
+ *            - 4 t > 1
+ * @note      0 is 0.5s
+ *            1 is 0.5s, 1s, ..., 3s, 3.5 step
  */
 uint8_t ch9121x_set_tcp_retry_mode(ch9121x_handle_t *handle, uint8_t t);
 
@@ -1087,32 +1088,6 @@ uint8_t ch9121x_get_flow_control(ch9121x_handle_t *handle, ch9121x_bool_t *enabl
  * @note      none
  */
 uint8_t ch9121x_set_arp_retry(ch9121x_handle_t *handle, uint8_t period, uint8_t times);
-
-/**
- * @brief      convert the tcp retry time to the register raw data
- * @param[in]  *handle pointer to a ch9121x handle structure
- * @param[in]  ms time in ms
- * @param[out] *reg pointer to a register raw buffer
- * @return     status code
- *             - 0 success
- *             - 2 handle is NULL
- *             - 3 handle is not initialized
- * @note       none
- */
-uint8_t ch9121x_tcp_retry_time_convert_to_register(ch9121x_handle_t *handle, uint16_t ms, uint8_t *reg);
-
-/**
- * @brief      convert the register raw data to the tcp retry time
- * @param[in]  *handle pointer to a ch9121x handle structure
- * @param[in]  reg register raw data
- * @param[out] *ms pointer to a ms buffer
- * @return     status code
- *             - 0 success
- *             - 2 handle is NULL
- *             - 3 handle is not initialized
- * @note       none
- */
-uint8_t ch9121x_tcp_retry_time_convert_to_data(ch9121x_handle_t *handle, uint8_t reg, uint16_t *ms);
 
 /**
  * @brief      convert the arp retry period to the register raw data
