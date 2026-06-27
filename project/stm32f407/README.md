@@ -278,9 +278,6 @@ ch9121x: phy status is 100Mbps full duplex.
 ch9121x: ch9121x_uart_timeout_convert_to_register/ch9121x_uart_timeout_convert_to_data test.
 ch9121x: uart timeout convert to register 30.
 ch9121x: check uart timeout convert ok.
-ch9121x: ch9121x_tcp_retry_time_convert_to_register/ch9121x_tcp_retry_time_convert_to_data test.
-ch9121x: tcp retry time convert to register 3000.
-ch9121x: check tcp retry time convert ok.
 ch9121x: ch9121x_arp_retry_period_convert_to_register/ch9121x_arp_retry_period_convert_to_data test.
 ch9121x: arp retry period convert to register 500.
 ch9121x: check arp retry period convert ok.

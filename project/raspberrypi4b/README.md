@@ -214,7 +214,7 @@ ch9121x: check dhcp ok.
 ch9121x: enable dhcp.
 ch9121x: check dhcp ok.
 ch9121x: ch9121x_set_mac/ch9121x_get_mac test.
-ch9121x: set mac 0xA3 0x97 0xA2 0x55 0x53 0xBE.
+ch9121x: set mac 0xAE 0x1C 0xEA 0x0B 0x23 0x04.
 ch9121x: check mac[0] ok.
 ch9121x: check mac[1] ok.
 ch9121x: check mac[2] ok.
@@ -224,13 +224,13 @@ ch9121x: check mac[5] ok.
 ch9121x: ch9121x_clear_mac test.
 ch9121x: default mac is 0x3C 0xAB 0x72 0x52 0x81 0xDD.
 ch9121x: ch9121x_set_ip/ch9121x_get_ip test.
-ch9121x: set ip 241.252.249.121.
+ch9121x: set ip 119.193.33.150.
 ch9121x: check ip ok.
 ch9121x: ch9121x_set_subnet_mask/ch9121x_get_subnet_mask test.
-ch9121x: set subnet mask 107.82.20.19.
+ch9121x: set subnet mask 28.81.50.9.
 ch9121x: check subnet mask ok.
 ch9121x: ch9121x_set_gateway/ch9121x_get_gateway test.
-ch9121x: set gateway 233.226.45.81.
+ch9121x: set gateway 177.105.156.251.
 ch9121x: check gateway ok.
 ch9121x: ch9121x_get_status test.
 ch9121x: get port1 status disconnect.
@@ -253,19 +253,19 @@ ch9121x: check mode ok.
 ch9121x: set port2 udp client mode.
 ch9121x: check mode ok.
 ch9121x: ch9121x_set_source_port/ch9121x_get_source_port test.
-ch9121x: set source port1 6772.
+ch9121x: set source port1 57361.
 ch9121x: check source port ok.
-ch9121x: set source port2 30121.
+ch9121x: set source port2 26258.
 ch9121x: check source port ok.
 ch9121x: ch9121x_set_dest_ip/ch9121x_get_dest_ip test.
-ch9121x: set port1 dest ip 86.8.87.39.
+ch9121x: set port1 dest ip 17.175.189.19.
 ch9121x: check dest ip ok.
-ch9121x: set port2 dest ip 167.5.212.208.
+ch9121x: set port2 dest ip 106.167.111.67.
 ch9121x: check dest ip ok.
 ch9121x: ch9121x_set_dest_port/ch9121x_get_dest_port test.
-ch9121x: set dest port1 16912.
+ch9121x: set dest port1 60428.
 ch9121x: check dest port ok.
-ch9121x: set dest port2 62350.
+ch9121x: set dest port2 24378.
 ch9121x: check dest port ok.
 ch9121x: ch9121x_set_uart_baud/ch9121x_get_uart_baud test.
 ch9121x: set port1 uart baud 9600.
@@ -282,9 +282,9 @@ ch9121x: check uart data bit ok.
 ch9121x: check uart parity ok.
 ch9121x: check uart stop bit ok.
 ch9121x: ch9121x_set_uart_timeout/ch9121x_get_uart_timeout test.
-ch9121x: set port1 uart timeout 119.
+ch9121x: set port1 uart timeout 128.
 ch9121x: check uart timeout ok.
-ch9121x: set port2 uart timeout 117.
+ch9121x: set port2 uart timeout 196.
 ch9121x: check uart timeout ok.
 ch9121x: ch9121x_set_source_port_random/ch9121x_get_source_port_random test.
 ch9121x: enable port1 source port random.
@@ -296,9 +296,9 @@ ch9121x: check source port random ok.
 ch9121x: disable port2 source port random.
 ch9121x: check source port random ok.
 ch9121x: ch9121x_set_uart_buffer_length/ch9121x_get_uart_buffer_length test.
-ch9121x: set port1 uart buffer length 150.
+ch9121x: set port1 uart buffer length 170.
 ch9121x: check uart buffer length ok.
-ch9121x: set port2 uart buffer length 136.
+ch9121x: set port2 uart buffer length 146.
 ch9121x: check uart buffer length ok.
 ch9121x: ch9121x_set_uart_flush/ch9121x_get_uart_flush test.
 ch9121x: enable port1 uart flush.
@@ -325,13 +325,10 @@ ch9121x: check arp retry ok.
 ch9121x: ch9121x_get_phy_status test.
 ch9121x: phy status is 100Mbps full duplex.
 ch9121x: ch9121x_uart_timeout_convert_to_register/ch9121x_uart_timeout_convert_to_data test.
-ch9121x: uart timeout convert to register 45.
+ch9121x: uart timeout convert to register 30.
 ch9121x: check uart timeout convert ok.
-ch9121x: ch9121x_tcp_retry_time_convert_to_register/ch9121x_tcp_retry_time_convert_to_data test.
-ch9121x: tcp retry time convert to register 1000.
-ch9121x: check tcp retry time convert ok.
 ch9121x: ch9121x_arp_retry_period_convert_to_register/ch9121x_arp_retry_period_convert_to_data test.
-ch9121x: arp retry period convert to register 100.
+ch9121x: arp retry period convert to register 500.
 ch9121x: check arp retry period convert ok.
 ch9121x: finish register test.
 ```

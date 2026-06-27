@@ -112,8 +112,6 @@ var driver__ch9121x_8h =
     [ "ch9121x_set_uart_config", "group__ch9121x__base__driver.html#gafed7d314bdd78cda38977be39f713d75", null ],
     [ "ch9121x_set_uart_flush", "group__ch9121x__base__driver.html#ga3c89acd2c485b02984b7a0ceeb103982", null ],
     [ "ch9121x_set_uart_timeout", "group__ch9121x__base__driver.html#ga49aec55c4fc01715f06b608d8477cb73", null ],
-    [ "ch9121x_tcp_retry_time_convert_to_data", "group__ch9121x__base__driver.html#gad2bcaead240266ad40b3009bc03d5e5e", null ],
-    [ "ch9121x_tcp_retry_time_convert_to_register", "group__ch9121x__base__driver.html#gacb2788f45d730b772ebe4edeee826341", null ],
     [ "ch9121x_uart_timeout_convert_to_data", "group__ch9121x__base__driver.html#gabcc6fe5a3a35351dd58da9f11d778181", null ],
     [ "ch9121x_uart_timeout_convert_to_register", "group__ch9121x__base__driver.html#ga80d95eac29760c6ba3247a2b924dfde7", null ],
     [ "ch9121x_write", "group__ch9121x__base__driver.html#ga8319e8bbe2638efdd15f29679d47d8ac", null ]

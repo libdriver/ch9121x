@@ -1018,8 +1018,8 @@ uint8_t ch9121x_set_dest_ip(ch9121x_handle_t *handle, ch9121x_port_t port, uint8
     }
     cmd[1] = ip[0];                                                  /* set ip[0] */
     cmd[2] = ip[1];                                                  /* set ip[1] */
-    cmd[3] = ip[2];                                                  /* set ip[0] */
-    cmd[4] = ip[3];                                                  /* set ip[1] */
+    cmd[3] = ip[2];                                                  /* set ip[2] */
+    cmd[4] = ip[3];                                                  /* set ip[3] */
     if (a_ch9121x_write_check(handle, cmd, 5,
                               CH9121X_UART_PRE_DELAY, 1000) != 0)    /* write dest ip */
     {
@@ -2222,8 +2222,9 @@ uint8_t ch9121x_get_dhcp(ch9121x_handle_t *handle, ch9121x_bool_t *enable)
  *            - 1 set tcp retry mode failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 t > 7
- * @note      none
+ *            - 4 t > 1
+ * @note      0 is 0.5s
+ *            1 is 0.5s, 1s, ..., 3s, 3.5 step
  */
 uint8_t ch9121x_set_tcp_retry_mode(ch9121x_handle_t *handle, uint8_t t)
 {
@@ -2237,9 +2238,9 @@ uint8_t ch9121x_set_tcp_retry_mode(ch9121x_handle_t *handle, uint8_t t)
     {
         return 3;                                                        /* return error */
     }
-    if (t > 7)                                                           /* check t */
+    if (t > 1)                                                           /* check t */
     {
-        handle->debug_print("ch9121x: t > 7.\n");                        /* t > 7 */
+        handle->debug_print("ch9121x: t > 1.\n");                        /* t > 1 */
         
         return 4;                                                        /* return error */
     }
@@ -2402,60 +2403,6 @@ uint8_t ch9121x_set_arp_retry(ch9121x_handle_t *handle, uint8_t period, uint8_t 
     }
     
     return 0;                                                            /* success return 0 */
-}
-
-/**
- * @brief      convert the tcp retry time to the register raw data
- * @param[in]  *handle pointer to a ch9121x handle structure
- * @param[in]  ms time in ms
- * @param[out] *reg pointer to a register raw buffer
- * @return     status code
- *             - 0 success
- *             - 2 handle is NULL
- *             - 3 handle is not initialized
- * @note       none
- */
-uint8_t ch9121x_tcp_retry_time_convert_to_register(ch9121x_handle_t *handle, uint16_t ms, uint8_t *reg)
-{
-    if (handle == NULL)                /* check handle */
-    {
-        return 2;                      /* return error */
-    }
-    if (handle->inited != 1)           /* check handle initialization */
-    {
-        return 3;                      /* return error */
-    }
-    
-    *reg = (uint8_t)(ms / 500);        /* convert real data to register data */
-    
-    return 0;                          /* success return 0 */
-}
-
-/**
- * @brief      convert the register raw data to the tcp retry time
- * @param[in]  *handle pointer to a ch9121x handle structure
- * @param[in]  reg register raw data
- * @param[out] *ms pointer to a ms buffer
- * @return     status code
- *             - 0 success
- *             - 2 handle is NULL
- *             - 3 handle is not initialized
- * @note       none
- */
-uint8_t ch9121x_tcp_retry_time_convert_to_data(ch9121x_handle_t *handle, uint8_t reg, uint16_t *ms)
-{
-    if (handle == NULL)             /* check handle */
-    {
-        return 2;                   /* return error */
-    }
-    if (handle->inited != 1)        /* check handle initialization */
-    {
-        return 3;                   /* return error */
-    }
-    
-    *ms = reg * 500;                /* convert raw data to real data */
-    
-    return 0;                       /* success return 0 */
 }
 
 /**

@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"group__ch9121x__interface__driver.html#ga7ceb94814658c9adfb3a2f100a6d6b1a":[0,0,3,5],
-"group__ch9121x__interface__driver.html#ga912292ac47c07c529cdfad03b89f97f6":[0,0,3,7],
 "group__ch9121x__interface__driver.html#gaae20e683a9b225ea4b9760c80084f1ae":[0,0,3,4],
 "group__ch9121x__interface__driver.html#gaafc642da5cb630766bfbc4037827d33f":[0,0,3,2],
 "group__ch9121x__interface__driver.html#gae5acda4aa838a825437cd9aec8c63abb":[0,0,3,8],

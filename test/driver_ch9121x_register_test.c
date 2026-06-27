@@ -1566,34 +1566,6 @@ uint8_t ch9121x_register_test(void)
     /* output */
     ch9121x_interface_debug_print("ch9121x: check uart timeout convert %s.\n", ms == ms_check ? "ok" : "error");
     
-    /* ch9121x_tcp_retry_time_convert_to_register/ch9121x_tcp_retry_time_convert_to_data test */
-    ch9121x_interface_debug_print("ch9121x: ch9121x_tcp_retry_time_convert_to_register/ch9121x_tcp_retry_time_convert_to_data test.\n");
-    
-    ms = (rand() % 7) * 500;
-    res = ch9121x_tcp_retry_time_convert_to_register(&gs_handle, ms, &reg);
-    if (res != 0)
-    {
-        ch9121x_interface_debug_print("ch9121x: tcp retry time convert to register failed.\n");
-        (void)ch9121x_deinit(&gs_handle);
-
-        return 1;
-    }
-    
-    /* output */
-    ch9121x_interface_debug_print("ch9121x: tcp retry time convert to register %d.\n", ms);
-    
-    res = ch9121x_tcp_retry_time_convert_to_data(&gs_handle, reg, &ms_check);
-    if (res != 0)
-    {
-        ch9121x_interface_debug_print("ch9121x: tcp retry time convert to data failed.\n");
-        (void)ch9121x_deinit(&gs_handle);
-
-        return 1;
-    }
-    
-    /* output */
-    ch9121x_interface_debug_print("ch9121x: check tcp retry time convert %s.\n", ms == ms_check ? "ok" : "error");
-    
     /* ch9121x_arp_retry_period_convert_to_register/ch9121x_arp_retry_period_convert_to_data test */
     ch9121x_interface_debug_print("ch9121x: ch9121x_arp_retry_period_convert_to_register/ch9121x_arp_retry_period_convert_to_data test.\n");
     
